@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace edp_enrollment
+{
+    public partial class login_form : Form
+    {
+        public login_form()
+        {
+            InitializeComponent();
+        }
+
+        private void close_btn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dashboard myboard = new Dashboard();
+            myboard.Show();
+            this.Hide();
+        }
+    }
+}
